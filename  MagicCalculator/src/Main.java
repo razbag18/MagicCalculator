@@ -23,21 +23,13 @@ public class Main {
 
         BigDecimal monthlySalary = BigDecimal.valueOf(annualSalaryNumber / 12);
 
-        System.out.printf("%1$.2f", monthlySalary);
-
-        // if monthly salary decimal remainder is >= 0.50 round up using math ceiling, else round down using math floor
-
-       // if (monthlySalary % 0 ){
-
-        //}
-        
 
         int workYearNumber = Integer.parseInt(workYear);
 
         int magicYear = workYearNumber + 65;
 
         System.out.println("Name: " + fullName);
-        //System.out.println("Monthly Salary: " + monthlySalary.setScale(0, RoundingMode.HALF_UP));
+        System.out.println("Monthly Salary: " + monthlySalary.setScale(0, RoundingMode.HALF_UP));
         System.out.println("Magic Year: " + magicYear);
 
     }
