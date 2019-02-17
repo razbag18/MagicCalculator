@@ -1,12 +1,12 @@
 import java.math.RoundingMode;
 import java.util.Scanner;
 import java.math.BigDecimal;
-import java.lang.Math;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("~~~\nWelcome to the magic year calculator!\n");
         System.out.print("Please input your first name: ");
         String firstName = scanner.nextLine();
         System.out.print("Please input your last name: ");
@@ -15,6 +15,7 @@ public class Main {
         String annualSalary = scanner.nextLine();
         System.out.print("Please enter your work start year: ");
         String workYear = scanner.nextLine();
+        System.out.print("\n");
 
         String fullName = firstName + " " + lastName;
 
@@ -28,9 +29,12 @@ public class Main {
 
         int magicYear = workYearNumber + 65;
 
+
+        System.out.println("Your magic age details are: \n");
         System.out.println("Name: " + fullName);
         System.out.println("Monthly Salary: " + monthlySalary.setScale(0, RoundingMode.HALF_UP));
         System.out.println("Magic Year: " + magicYear);
+        System.out.println("~~~");
 
     }
 }
